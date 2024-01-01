@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Chakra+Petch:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Background SVG -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      id="visual"
+      viewBox="0 0 900 600"
+      width="100vw"
+      style="height: auto"
+      version="1.1"
+    >
+      <path
+        d="M0 67L30 68C60 69 120 71 180 69C240 67 300 61 360 62C420 63 480 71 540 74C600 77 660 75 720 75C780 75 840 77 870 78L900 79L900 0L870 0C840 0 780 0 720 0C660 0 600 0 540 0C480 0 420 0 360 0C300 0 240 0 180 0C120 0 60 0 30 0L0 0Z"
+        fill="#8f4a65"
+      />
+      <path
+        d="M0 157L30 155C60 153 120 149 180 142C240 135 300 125 360 121C420 117 480 119 540 127C600 135 660 149 720 153C780 157 840 151 870 148L900 145L900 77L870 76C840 75 780 73 720 73C660 73 600 75 540 72C480 69 420 61 360 60C300 59 240 65 180 67C120 69 60 67 30 66L0 65Z"
+        fill="#b86284"
+      />
+      <path
+        d="M0 199L30 195C60 191 120 183 180 174C240 165 300 155 360 154C420 153 480 161 540 169C600 177 660 185 720 187C780 189 840 185 870 183L900 181L900 143L870 146C840 149 780 155 720 151C660 147 600 133 540 125C480 117 420 115 360 119C300 123 240 133 180 140C120 147 60 151 30 153L0 155Z"
+        fill="#cf86a3"
+      />
+      <path
+        d="M0 355L30 357C60 359 120 363 180 357C240 351 300 335 360 326C420 317 480 315 540 317C600 319 660 325 720 334C780 343 840 355 870 361L900 367L900 179L870 181C840 183 780 187 720 185C660 183 600 175 540 167C480 159 420 151 360 152C300 153 240 163 180 172C120 181 60 189 30 193L0 197Z"
+        fill="#d596af"
+      />
+      <path
+        d="M0 445L30 453C60 461 120 477 180 485C240 493 300 493 360 492C420 491 480 489 540 479C600 469 660 451 720 446C780 441 840 449 870 453L900 457L900 365L870 359C840 353 780 341 720 332C660 323 600 317 540 315C480 313 420 315 360 324C300 333 240 349 180 355C120 361 60 357 30 355L0 353Z"
+        fill="#cf86a3"
+      />
+      <path
+        d="M0 517L30 521C60 525 120 533 180 536C240 539 300 537 360 538C420 539 480 543 540 534C600 525 660 503 720 495C780 487 840 493 870 496L900 499L900 455L870 451C840 447 780 439 720 444C660 449 600 467 540 477C480 487 420 489 360 490C300 491 240 491 180 483C120 475 60 459 30 451L0 443Z"
+        fill="#b86284"
+      />
+      <path
+        d="M0 601L30 601C60 601 120 601 180 601C240 601 300 601 360 601C420 601 480 601 540 601C600 601 660 601 720 601C780 601 840 601 870 601L900 601L900 497L870 494C840 491 780 485 720 493C660 501 600 523 540 532C480 541 420 537 360 536C300 535 240 537 180 534C120 531 60 523 30 519L0 515Z"
+        fill="#8f4a65"
+      />
+    </svg>
+
+    <header>
+      <h1>AI Text to Image Generator</h1>
+    </header>
+
+    <!-- Instructions + Link to Presentation -->
+    <div class="overlay">
+      <div class="overlay-content">
+        <p>
+          Hello! To use this text-to-image generator, please put in a text
+          prompt in the white box below and click on the arrow. Loading may take
+          a few seconds.
+        </p>
+        <a
+          href="https://docs.google.com/presentation/d/1kLefUH4Dy2j_p7eRWYwV8YvTdDUpF1xSNpC_LWnfeZo/edit?usp=sharing"
+          class="button"
+          target="_blank"
+        >
+          Machine Learning & Bias Presentation
+        </a>
+      </div>
+    </div>
+
+    <!-- Generated Images -->
+    <section class="images-section"></section>
+
+    <!-- Text Input -->
+    <section class="bottom-section">
+      <div class="input-container">
+        <input />
+        <div id="submit-icon">➸</div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

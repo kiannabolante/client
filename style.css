@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ad2960;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+h1 {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+/* .bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+} */
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin-top: -50px; /* Adjust this value */
+}
+
+.input-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+  box-sizing: border-box;
+}
+
+#submit-icon {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  color: #8f4a65;
+}
+
+.images-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.image-container {
+  width: 48%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  width: 50%;
+  height: 14%;
+  background-color: rgba(117, 60, 82, 0.5);
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+}
+
+.overlay-content {
+  position: relative;
+  text-align: center; /* Center the text horizontally */
+  color: white; /* Set the text color */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the overlay-content div vertically and horizontally */
+  padding: 30px;
+  width: 90%;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: medium;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 10px 20px;
+  background: #8f4a65;
+  cursor: pointer;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: medium;
+}
+
+.button:hover {
+  border: 2px #8f4a65 solid;
+  background: white;
+  color: #8f4a65;
+  font-weight: bold;
+  transition: 0.5s;
+}
